@@ -24,11 +24,11 @@ Aeq = [1 , 0;
        0 , 1];
 beq = [0 ; 0];
 
-[x] = linprog(f , A , b , Aeq , beq)
+[x] = linprog(f , A , b , Aeq , beq);
 
 % mantenha essas duas linhas finais
-blendA = x(1);
-blendB = x(2);
+blendA = x(1)
+blendB = x(2)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
