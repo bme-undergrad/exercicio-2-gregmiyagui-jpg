@@ -25,7 +25,10 @@ b = [-15 ;
 Aeq = [];
 beq = [];
 
-[x] = linprog(f , A , b , Aeq , beq);
+lb = [];
+up = [20 , 50];
+
+[x] = linprog(f , A , b , Aeq , beq , lb , up);
 
 % mantenha essas duas linhas finais
 blendA = x(1)
